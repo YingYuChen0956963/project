@@ -1,0 +1,577 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*::after, *::before{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.pic:target:before{
+    content: "";
+    display: block;
+    height: 20px;
+}
+.Part1{
+    width: 100%;
+    height: 100vh;
+    /*background-color:blueviolet; */
+    mix-blend-mode: screen;
+    position: relative;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: unset;
+    position: absolute;
+}
+header{
+    width: 100%;
+    height: 110px;
+    background-color:rgba(255, 255, 255, 0);
+    padding: 0px 120px 0px 120px;
+    mix-blend-mode: screen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.logo{
+    width: 80px;
+    height: 110px;
+    background-image: url(./images/紅logo-04.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Navbar{
+    width: 605px;
+    height: 70px;
+    /* background-color: chocolate; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    width: 110px;
+    height: 30px;
+    mix-blend-mode: screen;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav1{
+    background-image: url(./images/NAV文字-05.png);
+}
+.nav2{
+    background-image: url(./images/NAV文字-04.png);
+}
+.nav3{
+    background-image: url(./images/NAV文字-03.png);
+}
+.nav4{
+    background-image: url(./images/NAV文字-02.png);
+}
+a:last-child{
+    margin-right: 0px;
+}
+.banner{
+    width: 100%;
+    height: calc(100% - 110px);
+    /* background-color: royalblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: screen;
+    padding-top: 300px;
+}
+.Hong-Tai-picture{
+    width: 410px;
+    height: 580px;
+    /* background-color: brown; */
+    position: relative;
+    background-image: url(./images/banner-全-07-min.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: anil 0.1s infinite;
+}
+@keyframes ani1{
+    0%{
+        transform: translate(0, 0);
+    }
+    25%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.4;
+    }
+    75%{
+        opacity: 0.6;
+    }
+    100%{
+        transform: translate(100px, 0);                
+    }
+}
+.part2{
+    width: 100%;
+    height: 950px;
+    background-image: url(./images/bcg-01-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.p2-left{
+    width: 100%;
+    height: 100%;
+    /* background-color: deepskyblue; */
+}
+.p2-l-top{
+    width: 100%;
+    height: calc(100% - 370px);
+    /* background-color: firebrick; */
+    padding: 150px 0px 0px 300px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-family: "DFKai-sb", "標楷體";
+    color: rgb(63, 50, 41);
+}
+.p2-l-t-1{
+    width: 95px;
+    height: 345px;
+    /* background-color: violet; */
+    position: relative;
+    margin-right: 45px;
+    font-size: 85px;
+    letter-spacing: 102px;
+}
+.p2-l-t-2{
+    width: 115px;
+    height: 215px;
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: row;
+}
+ul{
+    font-size: 28px;
+    list-style-type: none;
+}
+.p2-l-t-1 ul{
+    font-size: 60px;
+    position: absolute;
+    top: -5px;
+}   
+.p2-l-t-2 ul{
+    font-size: 30px;
+}
+.p2-l-bottom{
+    width: 100%;
+    height: 370px;
+    padding-left: 290px;
+}
+.p2-l-b-text{
+    width: 640px;
+    height: 270px;
+    background-color:rgba(128, 90, 73, 0.836);
+    color: white;
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "DFKai-sb", "標楷體";
+}
+.p2-l-b-text ul li{
+    padding-bottom: 15px;
+}
+.Part3{
+    width: 100%;
+    height: 970px;
+    background-image: url(./images/bcg-02-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
+    padding: 100px 290px 0px 0px;
+    resize: both;
+}
+.p3-title{
+    width: 85px;
+    height: 340px;
+    /* background-color: brown; */
+    display: flex;
+    text-align: center;
+    font-family: "DFKai-sb", "標楷體";
+    color: rgb(63, 50, 41);
+}
+.p3-title ul{
+    font-size: 60px;
+}
+.p3-text{
+    width: 290px;
+    height: 640px;
+    background-color: rgba(128, 90, 73, 0.836);
+    margin: 185px 140px 0px 0px;
+    padding-top: 30px;
+    position: relative;
+    background-image: url(./images/藥食同源內文-06-min.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Part4{
+    width: 100%;
+    height: 2570px;
+    background-image: url(./images/bcg-03-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.p4-top{
+    width: 435px;
+    height: 80px;
+    font-size: 60px;
+    text-align: center;
+    font-family: "DFKai-sb", "標楷體";
+}
+.p4-middle{
+    width: 1660px;
+    height: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.p4-m-1{
+    width: 100%;
+    height: 25%;
+    /* background-color: darkcyan; */
+    display: flex;
+    justify-content: space-between;
+}
+.block{
+    width: 50%;
+    height: 100%;
+    font-size: 60px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#p4-m-1-picture{
+    background-image: url(./images/專業藥膳-min.png);
+}
+#p4-m-2-picture{
+    background-image: url(./images/養生茶-min.png);
+}
+#p4-m-3-picture{
+    background-image: url(./images/漢方生活-min.png);
+}
+#p4-m-4-picture{
+    background-image: url(./images/養生零食-min.png);
+}
+#p4-m-1-text{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px 30px 190px;
+    font-family: "DFKai-sb", "標楷體";
+}
+.p4-m-1-line{
+    width: 645px;
+    border: 1px solid rgba(0, 0, 0, 0.664);
+    margin-top: 10px;
+}
+#p4-m-1-text ul{
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+#p4-m-1-text ul li{
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    font-family: "CJK", "Adobe 宋体 Std L";
+}
+.p4-m-1 a{
+    font-size: 30px;
+    padding-left: 420px;
+}
+.p4-m-2-line{
+    width: 120px;
+    border: 1px solid rgba(0, 0, 0, 0.664);
+    margin-top: 10px;
+}
+#p4-m-2-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 190px;
+    padding-top: 60px;
+    font-family: "DFKai-sb", "標楷體";
+}
+#p4-m-2-text ul{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+#p4-m-2-text ul li{
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    font-family: "CJK", "Adobe 宋体 Std L";
+}
+#p4-m-3-text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 190px;
+    padding-top: 60px;
+    font-family: "DFKai-sb", "標楷體";
+}
+#p4-m-3-text ul{
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+#p4-m-3-text ul li{
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    font-family: "CJK", "Adobe 宋体 Std L";
+}
+.p4-bottom{
+    width: 435px;
+    height: 80px;
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Part5{
+    width: 100%;
+    height: 760px;
+    background-image: url(./images/bcg-04-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.p5-top{
+    width: 240px;
+    height: 60px;
+    margin-top: 15px;
+    font-family: "DFKai-sb", "標楷體";
+}
+.p5-top ul{
+    font-size: 60px;
+}
+.p5-middle{
+    width: 1760px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.p5-middle a{
+    font-size: 50px;
+}
+.swiper{
+    width: 100%;
+    height: 500px;
+}
+.news{
+    width: 370px;
+    height: 370px;
+    background-color: cornflowerblue;
+}
+.p5-m-picture{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.p5-m-p-1{
+    background-image: url(./images/香料-min.jpg);
+}
+.p5-m-p-2{
+    background-image: url(./images/養生茶包商品圖-min.jpeg);
+}
+.p5-m-p-3{
+    background-image: url(./images/美纖茶-min.jpeg);;
+}
+.p5-m-p-4{
+    background-image: url(./images/養生藥膳商品圖-min.jpeg);;
+}
+.p5-m-text{
+    width: 100%;
+    height: calc(100% - 300px);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    color: rgb(63, 50, 41);
+}
+.p5-m-text ul li{
+    font-size: 30px;
+    font-family: "CJK", "Adobe 宋体 Std L";
+    padding-bottom: 10px;
+}
+.Part6{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.p6-top{
+    width: 100%;
+    height: 455px;
+    background-image: url(./images/bcg-05-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DFKai-sb", "標楷體";
+}
+.connect{
+    width: 380px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-right: 100px;
+}
+.p6-t-c-p{
+    width: 100px;
+    height: 100px;
+    background-image: url(./images/anise.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.p6-t-c-text{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.p6-bottom{
+    width: 100%;
+    height: calc(100% - 455px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.map{
+    position: absolute;
+    top: -135px;
+}
+.footer{
+    width: 100%;
+    height: 400px;
+    background-image: url(./images/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 33.333%;
+    grid-auto-flow: column;
+    resize: both;
+    overflow: auto;
+}
+.f-text{
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 0px 75px 120px;
+}
+.f-t-1{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.f-t-2{
+    font-size: 12px;
+}
+.f-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-logo-picture{
+    width: 185px;
+    height: 165px;
+    background-image: url(./images/hongtai.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.f-icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px 120px 75px 0px;
+}
+.f-i-navber{
+    width: 185px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.f-i-youtube{
+    width: 30px;
+    height: 30px;
+    background-image: url(./images/youtube.svg);
+}
+.f-i-ig{
+    background-image: url(./images/instagram.svg);
+}
+.f-i-fb{
+    width: 23px;
+    height: 23px;
+    background-image: url(./images/facebook.svg);
+}
+.f-i-shopee{
+    background-image: url(./images/shopee1.svg);
+}
+.up-button a{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:rgb(83, 71, 65);
+    position: fixed;
+    right: 50px;
+    bottom: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 30px;
+    padding-bottom: 5px;
+}
