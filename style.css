@@ -26,6 +26,7 @@ a{
     height: 100vh;
     mix-blend-mode: screen;
     position: relative;
+    z-index: 99;
 }
 video{
     width: 100%;
@@ -39,14 +40,15 @@ header{
     background-color:rgba(255, 255, 255, 0);
     padding: 0px 120px 0px 120px;
     mix-blend-mode: screen;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 99;
-    float: left;
+    z-index: 90;
 }
 .logo{
     width: 80px;
@@ -56,6 +58,7 @@ header{
 .Navbar{
     width: 605px;
     height: 70px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -84,13 +87,13 @@ a:last-child{
 .banner{
     width: 100%;
     height: calc(100% - 110px);
-    /* background-color: royalblue; */
+    
     display: flex;
     justify-content: center;
     align-items: center;
+
     mix-blend-mode: screen;
     padding-top: 300px;
-    float: left;
 }
 .Hong-Tai-picture{
     width: 410px;
@@ -130,9 +133,11 @@ a:last-child{
     width: 100%;
     height: calc(100% - 370px);
     padding: 150px 0px 0px 300px;
+
     display: flex;
     flex-direction: row;
     position: relative;
+
     font-family: "DFKai-sb", "標楷體";
     color: rgb(63, 50, 41);
 }
@@ -147,6 +152,7 @@ a:last-child{
 .p2-l-t-2{
     width: 115px;
     height: 215px;
+    
     display: flex;
     flex-direction: row;
 }
