@@ -1,13 +1,16 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: "DFKai-sb", "標楷體";
 }
 *::after, *::before{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
@@ -31,7 +34,8 @@ a{
 video{
     width: 100%;
     height: 100%;
-    object-fit: unset;
+    -o-object-fit: unset;
+       object-fit: unset;
     position: absolute;
 }
 header{
@@ -41,9 +45,17 @@ header{
     padding: 0px 120px 0px 120px;
     mix-blend-mode: screen;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
     position: fixed;
     top: 0;
@@ -59,10 +71,21 @@ header{
     width: 605px;
     height: 70px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 header a{
     width: 110px;
@@ -88,9 +111,17 @@ a:last-child{
     width: 100%;
     height: calc(100% - 110px);
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     mix-blend-mode: screen;
     padding-top: 300px;
@@ -101,11 +132,13 @@ a:last-child{
     /* background-color: brown; */
     position: relative;
     background-image: url(./images/banner-全-07-min.png);
-    animation: anil 0.1s infinite;
+    -webkit-animation: anil 0.1s infinite;
+            animation: anil 0.1s infinite;
 }
-@keyframes ani1{
+@-webkit-keyframes ani1{
     0%{
-        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
     }
     25%{
         opacity: 0.2;
@@ -117,7 +150,27 @@ a:last-child{
         opacity: 0.6;
     }
     100%{
-        transform: translate(100px, 0);                
+        -webkit-transform: translate(100px, 0);
+                transform: translate(100px, 0);                
+    }
+}
+@keyframes ani1{
+    0%{
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+    }
+    25%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.4;
+    }
+    75%{
+        opacity: 0.6;
+    }
+    100%{
+        -webkit-transform: translate(100px, 0);
+                transform: translate(100px, 0);                
     }
 }
 .part2{
@@ -134,11 +187,17 @@ a:last-child{
     height: calc(100% - 370px);
     padding: 150px 0px 0px 300px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     position: relative;
 
-    font-family: "DFKai-sb", "標楷體";
     color: rgb(63, 50, 41);
 }
 .p2-l-t-1{
@@ -153,8 +212,15 @@ a:last-child{
     width: 115px;
     height: 215px;
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 ul{
     font-size: 28px;
@@ -179,10 +245,18 @@ ul{
     background-color:rgba(128, 90, 73, 0.836);
     color: white;
     padding-left: 45px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-family: "DFKai-sb", "標楷體";
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .p2-l-b-text ul li{
     padding-bottom: 15px;
@@ -192,8 +266,12 @@ ul{
     height: 970px;
     background-image: url(./images/bcg-02-min.jpg);
     background-attachment: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     padding: 100px 290px 0px 0px;
     resize: both;
 }
@@ -201,9 +279,11 @@ ul{
     width: 85px;
     height: 340px;
     /* background-color: brown; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
-    font-family: "DFKai-sb", "標楷體";
+    
     color: rgb(63, 50, 41);
 }
 .p3-title ul{
@@ -222,29 +302,53 @@ ul{
     width: 100%;
     height: 2570px;
     background-image: url(./images/bcg-03-min.jpg);
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack:space-evenly;
+        -ms-flex-pack:space-evenly;
+            justify-content:space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .p4-top{
     width: 435px;
     height: 80px;
     font-size: 60px;
     text-align: center;
-    font-family: "DFKai-sb", "標楷體";
 }
 .p4-middle{
     width: 1660px;
     height: 2000px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .p4-m-1{
     width: 100%;
     height: 25%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .block{
     width: 50%;
@@ -264,10 +368,14 @@ ul{
     background-image: url(./images/養生零食-min.png);
 }
 #p4-m-1-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 60px 0px 30px 190px;
-    font-family: "DFKai-sb", "標楷體";
 }
 .p4-m-1-line{
     width: 645px;
@@ -293,12 +401,19 @@ ul{
     margin-top: 10px;
 }
 #p4-m-2-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 190px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    
+    padding-right: 160px;
     padding-top: 60px;
-    font-family: "DFKai-sb", "標楷體";
 }
 #p4-m-2-text ul{
     padding-top: 40px;
@@ -310,11 +425,15 @@ ul{
     font-family: "CJK", "Adobe 宋体 Std L";
 }
 #p4-m-3-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-left: 190px;
     padding-top: 60px;
-    font-family: "DFKai-sb", "標楷體";
 }
 #p4-m-3-text ul{
     padding-top: 40px;
@@ -331,24 +450,44 @@ ul{
     border: 1px solid black;
     font-size: 30px;
     text-align: center;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .Part5{
     width: 100%;
     height: 760px;
     background-image: url(./images/bcg-04-min.jpg);
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack:space-evenly;
+        -ms-flex-pack:space-evenly;
+            justify-content:space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .p5-top{
     width: 240px;
     height: 60px;
     margin-top: 15px;
-    font-family: "DFKai-sb", "標楷體";
 }
 .p5-top ul{
     font-size: 60px;
@@ -356,10 +495,22 @@ ul{
 .p5-middle{
     width: 1760px;
     height: 500px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .p5-middle a{
     font-size: 50px;
@@ -393,8 +544,16 @@ ul{
     width: 100%;
     height: calc(100% - 300px);
     background-color: white;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
     padding-left: 50px;
     color: rgb(63, 50, 41);
 }
@@ -406,26 +565,51 @@ ul{
 .Part6{
     width: 100%;
     height: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
 }
 .p6-top{
     width: 100%;
     height: 455px;
     background-image: url(./images/bcg-05-min.jpg);
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "DFKai-sb", "標楷體";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .connect{
     width: 380px;
     height: 100px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
     margin-bottom: 100px;
     margin-right: 100px;
 }
@@ -436,17 +620,29 @@ ul{
 }
 .p6-t-c-text{
     font-size: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: white;
 }
 .p6-bottom{
     width: 100%;
     height: calc(100% - 455px);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
 }
 .map{
@@ -457,15 +653,23 @@ ul{
     width: 100%;
     height: 400px;
     background-image: url(./images/footer.jpg);
+
+    display: -ms-grid;
+
     display: grid;
+    -ms-grid-columns: 33.333%;
     grid-template-columns: 33.333%;
     grid-auto-flow: column;
     resize: both;
     overflow: auto;
 }
 .f-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 0px 0px 75px 120px;
 }
 .f-t-1{
@@ -476,9 +680,15 @@ ul{
     font-size: 12px;
 }
 .f-logo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .f-logo-picture{
     width: 185px;
@@ -486,25 +696,40 @@ ul{
     background-image: url(./images/hongtai.svg);
 }
 .f-icon{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 0px 120px 75px 0px;
 }
 .f-i-navber{
     width: 185px;
     height: 25px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .icon{
     width: 25px;
     height: 25px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .f-i-youtube{
     width: 30px;
@@ -527,12 +752,23 @@ ul{
     height: 60px;
     border-radius: 50%;
     background-color:rgb(83, 71, 65);
+
     position: fixed;
     right: 50px;
     bottom: 225px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
     color:white;
     font-size: 30px;
     padding-bottom: 5px;
